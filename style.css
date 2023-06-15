@@ -42,6 +42,9 @@
 
 .nameContainer{
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color:#a37cf0;
 }
 
@@ -60,6 +63,7 @@
 .dark{
     background:#2C3333;
     color: #0E8388;
+    background-image:url(images/bg1.png);
 }
 
 .jobTitle{
@@ -71,6 +75,7 @@
 .light{
     background: #0B2447;
     color: #576CBC;
+    background-image: url(images/bg2.png);
 }
 
 .projects{
@@ -166,4 +171,35 @@
 
 .laptopScreen::-webkit-scrollbar{
     display: none;
+}
+
+@media screen and (max-width:1024px) {
+
+    .nameContainer{
+        padding: 20px;
+    }
+
+    .name{
+        font-size: 10vw;
+    }
+
+    .projects{
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    .project{
+        flex-direction: column;
+        height: max-content;
+    }
+    .project:nth-child(2n){
+        flex-direction: column;
+    }
+
+    .phone{
+        transform: none !important;
+    }
+    .laptop{
+        transform: none !important;
+    }
 }
