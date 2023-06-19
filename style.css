@@ -173,14 +173,87 @@
     display: none;
 }
 
+.team{
+    padding: 60px;
+    color: white;
+    background: #4e3155;
+}
+
+.container-team{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+
+.teamTitle{
+    width: 400px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.teamTitle h1{
+    font-size: 2.5rem;
+}
+
+
+.card{
+    height: 270px;
+    width: 600px;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px black;
+}
+
+.flexContainer{
+    display: flex;
+    gap: 1rem;
+}
+
+.flexContainer img{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.card-wrapper h2{
+    font-size: 2rem;
+}
+
+.userdesc{
+    font-size: 18px;
+    margin: 0.6rem 0;
+}
+
+.icon{
+    background-color: #963796;
+    display: grid;
+    place-items: center;
+    width: 60px;
+    height: 60px;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.icon:hover{
+    background-color: #2643b6;
+}
+
+.socials{
+    display: flex;
+    gap: 0.5rem;
+}
+
 @media screen and (max-width:1024px) {
 
     .nameContainer{
         padding: 20px;
-    }
-
-    .name{
-        font-size: 10vw;
     }
 
     .projects{
@@ -203,3 +276,4 @@
         transform: none !important;
     }
 }
+
