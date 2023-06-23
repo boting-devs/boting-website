@@ -9,10 +9,25 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 </head>
 <body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="name-logo"><a href="#"><span>Boting</span>.xyz</a></div>
+            <ul class="menu">
+                <li><a href="" class="menu-btn">Chit-Chat</a></li>
+                <li><a href="" class="menu-btn">Vibr</a></li>
+                <li><a href="" class="menu-btn-circular">Contact Us</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+    </nav>
     <div class="container">
         <div class="intro">
             <div class="salute">
@@ -121,7 +136,98 @@
                 </div>
             </div>
         </div>
+        <div class="contact-container">
+            <span class="big-circle"></span>
+            <span class="big-circle-2"></span>
+            <div class="form">
+                <div class="contact-info">
+                    <h3 class="contactTitle">Let's Get in Touch</h3>
+                    <p class="text">Fill the given form to get in touch with us or write an email to the given email-id.</p>
+                    <div class="info">
+                        <div class="information">
+                            <i class="ri-mail-fill ri-2x"></i>
+                            <p>phoolivix@boting.xyz</p>
+                        </div>
+                        <div class="discord-server">
+                            <p>Join Our Discord Server to Talk with Us!</p>
+                            <button type="button" class="discord-btn">
+                                <span class="btn-icon"><i class="ri-discord-fill ri-2x"></i></span>
+                                <span class="btn-text">Join Server</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <span class="circle one"></span>
+                    <span class="circle two"></span>
+
+
+                    <form action="https://formsubmit.co/4ee22b61c3c673750255ecddc92101af" method="POST">
+                        <h3 class="contactTitle">Contact Us</h3>
+                        <div class="input-container">
+                            <input type="text" name="name" class="input">
+                            <label for ="">Username</label>
+                            <span>Username</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="email" class="input">
+                            <label for ="">Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" name="subject" class="input">
+                            <label for ="">Subject</label>
+                            <span>Subject</span>
+                        </div>
+                        <div class="input-container textarea">
+                            <textarea name="message" class="input"></textarea>
+                            <label for ="">Message</label>
+                            <span>Message</span>
+                        </div>
+                        <input type="submit" value="send" class="btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer-all">
+            <div class="footer-left">
+                <h3>Boting<span>.xyz</span></h3>
+
+                <p class="footer-links">
+                    <a href="#" class="link-1">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Team</a>
+                    <a href="#">Contact Us</a>
+                </p>
+                <p class="footer-end-note">Copyright © 2023 <strong>Boting.xyz</strong> All rights reserved</p>
+            </div>
+
+            <div class="footer-center">
+                <div>
+                    <i class="ri-mail-fill"></i>
+                    <p>phoolivix@boting.xyz</a></p>
+                </div>
+                <div>
+                    <i class="ri-discord-fill"></i>
+                    <p>Chit-Chat</p>
+                </div>
+                <div>
+                    <i class="ri-music-2-fill"></i>
+                    <p>Vibr</p>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <p class="footer-about">
+                    <span>About Boting</span>
+                    <strong>Boting</strong> makes Discord bots to help improve your discord experience.
+                </p>                    
+            </div>
+        </footer>
     </div>
-    <script src="./app.js"></script>
+    <script src="script.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
