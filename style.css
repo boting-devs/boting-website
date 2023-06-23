@@ -43,9 +43,7 @@
     transition: all 0.3s ease;
 }
 
-.navbar.sticky .name-logo a span{
-    color: #fff;
-}
+
 
 .navbar .menu li{
     list-style: none;
@@ -63,12 +61,9 @@
 }
 
 .navbar .menu li a:hover{
-    color: #576CBC;
+    color: aqua;
 }
 
-.navbar.sticky .menu li a:hover{
-    color: #2643b6;
-}
 
 .navbar .menu li .menu-btn-circular {
     border: 2px #fff; /* Border color */
@@ -83,6 +78,9 @@
     color: #576cbc; /* Change text color on hover */
   }
   
+  .navbar.sticky .menu li .menu-btn-circular:hover{
+    color: #576CBC;
+  }
 
   .menu-btn{
     color: #fff;
