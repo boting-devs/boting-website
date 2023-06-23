@@ -7,14 +7,13 @@ const phone = document.querySelector(".phone");
 const laptop = document.querySelector(".laptop");
 
 const inputs = document.querySelectorAll(".input");
-const discordBtn = document.querySelector(".discord-btn"); // Add dot before "discord-btn"
+const discordBtn = document.querySelector(".discord-btn"); 
 
 window.addEventListener("scroll", () => {
   let offsetY = window.scrollY;
   saluteTextContainer.style.transform = `translateY(${offsetY * 0.3}px)`;
   saluteTextContainer2.style.transform = `translate(${offsetY * 0.2}px, ${offsetY * 0.3}px)`;
   ourName.style.transform = `translateX(${offsetY * 0.2}px)`;
-  //add unique background transform for a unique background in jobtitlecontainer//
   jobTitles[0].style.transform = `translateX(calc(200vh - ${offsetY * 0.9}px))`;
   jobTitles[1].style.transform = `translateX(calc(-300vh + ${offsetY}px))`;
   projectTitle.style.transform = `translateY(calc(400vh - ${offsetY}px))`;
@@ -39,6 +38,10 @@ inputs.forEach((input) => {
   input.addEventListener("blur", blurFunc);
 });
 
+discordBtn.addEventListener("click", function () {
+  window.open("https://discord.com/invite/vibr-support-939509053623795732", "_blank");
+});
+
 
 $(document).ready(function () {
   $(window).scroll(function () {
@@ -54,6 +57,7 @@ $(document).ready(function () {
     // applying again smooth scroll on menu items click
     $('html').css("scrollBehavior", "smooth");
   });
+  
 
 // toggle menu/navbar script
   $('.menu-btn').click(function(){
