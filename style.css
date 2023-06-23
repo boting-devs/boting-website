@@ -67,7 +67,7 @@
 }
 
 .navbar.sticky .menu li a:hover{
-    color: #fff;
+    color: #2643b6;
 }
 
 .navbar .menu li .menu-btn-circular {
@@ -170,12 +170,12 @@
     flex-direction: column;
     gap: 30vh;
     padding: 0px 100px;
-
+    background: #191919;
 }
 
 .projectTitle{
     font-size: 7vw;
-    color: #555;
+    color: #81939e;
 }
 
 .project{
@@ -223,17 +223,32 @@
 
 .projectDesc{
     font-size: 20px;
-    color: #555;
+    color: #687c8d;
     text-align: justify;
     line-height: 40px;
 }
 
 .projectButton{
-    padding: 10px 20px;
-    background-color: gray;
-    border:2px solid #555;
+    padding: 10px 22px;
+    background:none;
+    border: 2px solid #fff;
     cursor: pointer;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    box-shadow:0 0 10px #774fc2 ;
+    background: #774fc2;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow , transform;
+    transition-property: box-shadow,transform;
+}
 
+.projectButton:hover, .projectButton:focus , .projectButton:active{
+    box-shadow: 0 0 20px #774fc2;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .laptop{
@@ -325,6 +340,12 @@
     height: 60px;
     font-size: 1.1rem;
     border-radius: 50%;
+    color: #fff;
+    
+}
+
+.icon a{
+    text-decoration: none;
     color: #fff;
 }
 
@@ -671,7 +692,7 @@ textarea.input{
 .footer-links a {
     display: inline-block;
     line-height: 1.8;
-    font-weight: 400;
+    font-weight: bold;
     text-decoration: none;
     color: inherit;
 }
@@ -708,6 +729,8 @@ textarea.input{
     margin: 0;
     font-size: 18px;
     line-height: 2;
+    text-decoration: none;
+    color: #fff;
 }
 
 
@@ -718,6 +741,7 @@ textarea.input{
     left: 0;
     display: inline-block;
     padding-right: 5px;
+    
 }
 
 .footer-links .link-1::before{
@@ -905,7 +929,10 @@ textarea.input{
 
 @media (max-width:765px){
     .userdesc{
-        font-size: 16px;
+        font-size: 15px;
+    }
+    .card-wrapper h2{
+        font-size: 1.5rem;
     }
 }
 

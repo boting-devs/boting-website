@@ -8,6 +8,7 @@ const laptop = document.querySelector(".laptop");
 
 const inputs = document.querySelectorAll(".input");
 const discordBtn = document.querySelector(".discord-btn"); // Add dot before "discord-btn"
+
 window.addEventListener("scroll", () => {
   let offsetY = window.scrollY;
   saluteTextContainer.style.transform = `translateY(${offsetY * 0.3}px)`;
@@ -38,9 +39,6 @@ inputs.forEach((input) => {
   input.addEventListener("blur", blurFunc);
 });
 
-discordBtn.addEventListener("click", function () {
-  window.location.href = "https://discord.com/invite/vibr-support-939509053623795732";
-});
 
 $(document).ready(function () {
   $(window).scroll(function () {
@@ -68,4 +66,17 @@ $(document).ready(function () {
       $('.navbar .menu').toggleClass("active");
       $('.menu-btn i').toggleClass("active");
   });
+
+  $('a.menu-btn-circular').click(function() {
+    var target = $($(this).attr('href'));
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 500);
+      return false;
+    }
+  });
+  $('.footer-links a').click(function(){
+    $('html').css("scrollBehavior","smooth");
+});
 });
